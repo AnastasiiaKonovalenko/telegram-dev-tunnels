@@ -1,28 +1,36 @@
 {
-    "name": "telegram-dev-tunnels",
-    "version": "0.2.0",
-    "description": "Unofficial configurable Cloudflare quick tunnels CLI for Telegram Mini App development.",
-    "type": "module",
-    "bin": {
-        "tg-dev-tunnels": "bin/tg-dev-tunnels.js"
-    },
-    "files": [
-        "bin",
-        "README.md",
-        "LICENSE"
-    ],
-    "keywords": [
-        "telegram",
-        "mini-app",
-        "cloudflared",
-        "cloudflare-tunnel",
-        "tunnel",
-        "nextjs",
-        "development",
-        "cli"
-    ],
-    "license": "MIT",
-    "engines": {
-        "node": ">=18"
-    }
+  "name": "telegram-dev-tunnels",
+  "version": "0.2.0",
+  "description": "Unofficial configurable Cloudflare quick tunnels CLI for Telegram Mini App development.",
+  "type": "module",
+  "bin": {
+    "tg-dev-tunnels": "./bin/tg-dev-tunnels.js"
+  },
+  "files": [
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "telegram",
+    "mini-app",
+    "cloudflared",
+    "cloudflare-tunnel",
+    "tunnel",
+    "nextjs",
+    "development",
+    "cli"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiiaKonovalenko/telegram-dev-tunnels.git"
+  },
+  "homepage": "https://github.com/AnastasiiaKonovalenko/telegram-dev-tunnels#readme",
+  "bugs": {
+    "url": "https://github.com/AnastasiiaKonovalenko/telegram-dev-tunnels/issues"
+  }
 }
