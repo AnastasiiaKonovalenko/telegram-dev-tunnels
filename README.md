@@ -222,29 +222,3 @@ tg-dev-tunnels \
 ```bash
 tg-dev-tunnels --skip-telegram
 ```
-
-## Publishing checklist
-
-Check the package contents before publishing:
-
-```bash
-npm pack --dry-run
-```
-
-For the unscoped package name `telegram-dev-tunnels`:
-
-```bash
-npm publish
-```
-
-For a scoped public package, for example `@your-name/telegram-dev-tunnels`:
-
-```bash
-npm publish --access public
-```
-
-After publishing, users should install it as a dev dependency:
-
-```bash
-npm install -D telegram-dev-tunnels
-```
