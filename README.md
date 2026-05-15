@@ -13,7 +13,35 @@ It starts Cloudflare tunnels for your web app and API, then can automatically:
 
 The original project script was Bash-specific and tied to one repository layout. This package is Node-based, cross-platform, and configurable through CLI flags or a config file.
 
+## Install
+
+This is a development-only CLI tool. Install it as a dev dependency:
+
+```bash
+npm install -D telegram-dev-tunnels
+```
+
+Then add a script to your app `package.json`:
+
+```json
+{
+  "scripts": {
+    "tunnels": "tg-dev-tunnels"
+  }
+}
+```
+
+Run:
+
+```bash
+npm run tunnels
+```
+
+> Note: npmjs.com may show `npm i telegram-dev-tunnels` in its automatic install block. For real projects, use `npm install -D telegram-dev-tunnels`.
+
 ## Install locally from a folder
+
+For local testing before publishing:
 
 ```bash
 npm install -D ./telegram-dev-tunnels
@@ -197,12 +225,25 @@ tg-dev-tunnels --skip-telegram
 
 ## Publishing checklist
 
+Check the package contents before publishing:
+
 ```bash
 npm pack --dry-run
+```
+
+For the unscoped package name `telegram-dev-tunnels`:
+
+```bash
+npm publish
+```
+
+For a scoped public package, for example `@your-name/telegram-dev-tunnels`:
+
+```bash
 npm publish --access public
 ```
 
-After publishing, users can install it with:
+After publishing, users should install it as a dev dependency:
 
 ```bash
 npm install -D telegram-dev-tunnels
