@@ -1,6 +1,6 @@
 {
   "name": "telegram-dev-tunnels",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Unofficial configurable Cloudflare quick tunnels CLI for Telegram Mini App development.",
   "type": "module",
   "bin": {
